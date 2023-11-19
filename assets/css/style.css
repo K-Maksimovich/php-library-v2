@@ -1,0 +1,68 @@
+
+
+*{
+    border: 1px solid black;
+}
+
+
+.block-view{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: #d3d3d3;
+    padding: 50px 40px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 2px;
+}
+
+
+#card-list{
+    width: 80%;
+    margin: 5% auto;
+}
+
+
+#line{
+    border: #cbcbcb 1px solid;
+}
+
+.welcome, .title{
+    margin: 20px 0;
+}
+
+.welcome .w{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    text-align: center;
+    margin: 1% auto;
+}
+.welcome #text{
+    color: #535353;
+    text-align: center;
+}
+
+.title #title{
+    color: #444444;
+    text-align: center;
+}
+
+#c1, #c2, #c3{
+    border: 1px solid rgb(204, 204, 204);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+#c1 p, #c2 p, #c3 p{
+    text-align: center;
+}
+
+.but{
+    margin: 0 33%;
+}
+
+
+
