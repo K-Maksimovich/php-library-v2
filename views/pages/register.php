@@ -43,6 +43,7 @@ App::ifsign();
 
         ?>
     </form>
+    <p class="text-muted w-50 blockquote mx-auto"> Do you have an account? <a href="/backend/library-v2/login"> Login </a></p>
 </div>
 
 

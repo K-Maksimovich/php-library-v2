@@ -1,6 +1,12 @@
 <?php
 use App\Services\Page;
 use App\Services\App;
+use App\Controllers\Authors;
+?>
+
+<?php
+Authors::delinitials();
+Authors::books_count();
 ?>
 
 <?php Page::part("head"); ?>
@@ -50,9 +56,13 @@ use App\Services\App;
                 foreach ($authors as $author) {
                 ?>
                 <tr>
-                    <td><?= $author[1] ?></td>
-                    <td></td>
-                    <td align="right"><button class="btn btn-outline-success" type="button">Edit</button></td>
+                    <td><?= $author[2] ?></td>
+                    <td><?= $author[3] ?></td>
+                    <?php
+                    if ($_SESSION['user']['user_gr'] >= 3){
+                        echo '<td align="right"><button class="btn btn-outline-success" type="button">Edit</button></td>';
+                    }
+                    ?>
                 </tr>
             <?php
                 }

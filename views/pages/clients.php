@@ -46,13 +46,13 @@ use App\Services\App;
 <!--            </tr>-->
 <!--            </tbody>-->
 
-            <table class="table table-hover mt-5">
+            <table class="table table-hover mt-4 mx-auto">
                 <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Readed books</th>
-                    <th scope="col"></th>
-                </tr>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <td align="center" class="fw-bold">Readed books</td>
+                        <th scope="col"></th>
+                    </tr>
                 </thead>
                 <tbody>
                     <?php
@@ -63,10 +63,10 @@ use App\Services\App;
                             ?>
                             <tr>
                                 <td><?= $client[1] ?></td>
-                                <td><?= $client[5] ?></td>
+                                <td align="center"><?= $client[5] ?></td>
                                 <td></td>
                             <?php
-                            if ($_SESSION['user']['user_gr'] > 1){
+                            if ($_SESSION['user']['user_gr'] >= 3){
                                 echo '<td align="right"><button class="btn btn-outline-success" type="button">Edit</button></td>';
                                 echo '<td ><button class="btn btn-outline-primary" type="button">Card</button></td>';
                             }

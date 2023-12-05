@@ -34,10 +34,11 @@ App::ifsign();
         if ($_SESSION['message-d']){
             echo '<div class="alert alert-danger m-2" role="alert"> ' . $_SESSION['message-d'] . ' </div>';
         }
-
         unset($_SESSION['message-d']);
         ?>
     </form>
+
+    <p class="text-muted w-50 blockquote mx-auto">Don't have an account? <a href="/backend/library-v2/register"> Register </a></p>
 </div>
 
 

@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use App\Controllers\Authors;
+
 class Router
 {
     private static array $URL_ALL = [];
@@ -49,8 +51,11 @@ class Router
                     $method = $route["method"];
                     $action->$method();
                     die();
-                } else {
+                } elseif ($route["page"]){
                     require_once "views/pages/" . $route['page'] . ".php";
+                    die();
+                } else{
+                    Authors::books_read();
                     die();
                 }
             }
@@ -63,5 +68,11 @@ class Router
     public static function error($error)
     {
         require_once "views/errors/" . $error . ".php";
+    }
+
+
+    public static function open_books()
+    {
+
     }
 }

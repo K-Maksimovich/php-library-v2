@@ -77,8 +77,6 @@ class Auth
             self::exLog();
         }
 
-//        $this->is_avatar();
-
     }
 
 
